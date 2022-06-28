@@ -18,17 +18,17 @@ struct CaseCoverView: View {
                 VStack(alignment: .leading, spacing: 0) {
                     VStack(alignment: .leading, spacing: 0){
                         Button(action: {
-                            debugPrint("Click 拍摄")
+                            debugPrint("Click Shoot")
                         }, label: {
-                            Text("拍摄").frame(width: 328, height: 55, alignment: .center)
+                            Text("Shoot").frame(width: 328, height: 55, alignment: .center)
                         })
                         
                         Rectangle().frame(width: 328, height: 1, alignment: .center).foregroundColor(Color.gray.opacity(0.4))
                         
                         Button(action: {
-                            debugPrint("Click 相册")
+                            debugPrint("Click Photos")
                         }, label: {
-                            Text("相册").frame(width: 328, height: 55, alignment: .center)
+                            Text("Photos").frame(width: 328, height: 55, alignment: .center)
                         })
                     }
                     .background(Color.white)

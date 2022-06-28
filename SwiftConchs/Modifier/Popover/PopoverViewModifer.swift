@@ -65,7 +65,6 @@ public struct PopoverViewModifer<Container,S>: ViewModifier  where Container : V
         if popSize.width > originRect.size.width {
             x = originRect.maxX - popSize.width/2
         }
-        debugPrint("globalRect.minY",globalRect.minY,popSize.height)
         return CGPoint(x: x, y: y)
     }
 }

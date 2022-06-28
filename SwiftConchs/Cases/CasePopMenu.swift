@@ -25,7 +25,6 @@ struct CasePopMenu: View {
                                     Divider()
                                     Text("复制")
                                 }.onTapGesture {
-                                    debugPrint("Touch")
                                     self.showPop = false
                                 }
                             }.onLongPressGesture {
@@ -45,7 +44,6 @@ struct CasePopMenu: View {
                                     Divider()
                                     Text("复制")
                                 }.onTapGesture {
-                                    debugPrint("Touch")
                                     self.showPop = false
                                 }
                             }.onLongPressGesture {
@@ -67,7 +65,6 @@ struct CasePopMenu: View {
                                     Divider()
                                     Text("复制")
                                 }.onTapGesture {
-                                    debugPrint("Touch")
                                     self.showPop = false
                                 }
                             }.onLongPressGesture {
@@ -88,7 +85,6 @@ struct CasePopMenu: View {
                                     Divider()
                                     Text("复制")
                                 }.onTapGesture {
-                                    debugPrint("Touch")
                                     self.showPop = false
                                 }
                             }.onLongPressGesture {
