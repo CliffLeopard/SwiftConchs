@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  SwiftConchs
+
+  Created by CliffLeopard on 2022/6/24.
+  
+*/
+
+"Popover" = "PopMenu";
+"CoverView" = "CoverView";
+"MultiGesture" = "MultiGesture";
