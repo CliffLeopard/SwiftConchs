@@ -11,7 +11,7 @@ struct ContentView: View {
     @State var showpop = false
     let cases: [CaseLink] = [
         CaseLink("CasePopMenu", CasePopMenu()),
-        CaseLink("CaseUIKitPopMenu", CaseUIKitPopMenu()),
+        CaseLink("CasePopMenuInList", CasePopMenuInList()),
         CaseLink("CaseMenu", CaseMenu()),
         CaseLink("CoverView", CaseCoverView()),
         CaseLink("MultiGesture", CaseMultiGesture()),

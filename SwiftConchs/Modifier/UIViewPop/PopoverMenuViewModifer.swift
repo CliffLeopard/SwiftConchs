@@ -55,32 +55,17 @@ struct PopMenuCoverViewModifer<Container,S>: ViewModifier  where Container:View 
         return content.background(
             GeometryReader { proxy in
                 let globalRect = proxy.frame(in: .global)
-                let arrowDown = globalRect.minY > height + 40
-                let isLeft = self.direction == .leftToRight
                 EmptyView()
                     .onChange(of: self.popId) { newValue in
-                        debugPrint("PodI Changed")
                         if let controller = UIViewTool.rootController() {
-                            if menuView == nil {
-                                let childController = UIHostingController(
-                                    rootView: container()
-                                        .simultaneousGesture(
-                                            TapGesture().onEnded {
-                                                self.popId = nil
-                                                menuView?.removeFromSuperview()
-                                            }
-                                        )
-                                        .frame(width: width, height: height, alignment: .center)
-                                        .popbackground(arrowDown:arrowDown,anchorRect: globalRect, color: color,arrowWidth:arrowWidth,arrowHeight:arrowHeight,tl: tl , tr: tr, bl: bl, br: br,isLeft: self.direction == .rightToLeft)
-                                    
-                                    
-                                )
-                                self.menuView = childController.view
-                            }
+                            let childController = UIHostingController(
+                                rootView: getPopView(globalRect)
+                            )
+                            self.menuView = childController.view
                             if let view = menuView {
                                 if self.id == newValue {
-                                    let point = popViewPosition(originRect: globalRect, popSize: CGSize(width: width, height: height), arrowDown: arrowDown,isLeft: isLeft)
-                                    view.frame = CGRect(x:point.x, y:point.y, width: width, height: height)
+                                    view.frame = CGRect(x:0, y:0, width: bounds.width, height: bounds.height)
+                                    view.backgroundColor = UIColor.black.withAlphaComponent(0.0)
                                     controller.view.addSubview(view)
                                     controller.view.bringSubviewToFront(view)
                                 } else {
@@ -93,14 +78,39 @@ struct PopMenuCoverViewModifer<Container,S>: ViewModifier  where Container:View 
         )
     }
     
+    
+    func getPopView(_ globalRect:CGRect) -> some View {
+        let arrowDown = globalRect.minY > height + 40
+        let isLeft = self.direction == .leftToRight
+        let point = popViewPosition(originRect: globalRect, popSize: CGSize(width: width, height: height), arrowDown: arrowDown,isLeft: isLeft)
+        return  VStack{ container()
+                .frame(width: width, height: height, alignment: .center)
+                .popbackground(arrowDown:arrowDown,anchorRect: globalRect, color: color,arrowWidth:arrowWidth,arrowHeight:arrowHeight,tl: tl , tr: tr, bl: bl, br: br,isLeft: self.direction == .rightToLeft)
+                .position(point)
+        }
+        .frame(width: bounds.width, height: bounds.height, alignment: .center)
+        .background(Color.black.opacity(0.01))
+        .simultaneousGesture(
+            DragGesture(minimumDistance: 0)
+                .onChanged { _ in
+                    self.popId = nil
+                    menuView?.removeFromSuperview()
+                }
+            
+                .onEnded { _ in
+                    self.popId = nil
+                    menuView?.removeFromSuperview()
+                }
+        )
+    }
+    
     func popViewPosition(originRect:CGRect, popSize:CGSize, arrowDown:Bool, isLeft:Bool) -> CGPoint {
-        var x = popSize.width > originRect.width ? originRect.minX :  (originRect.midX - popSize.width/2)
-        let y =  arrowDown ? ( originRect.minY - popSize.height - arrowWidth ) : (originRect.maxY + arrowHeight)
+        var x = popSize.width > originRect.width ? originRect.minX + popSize.width / 2 :  originRect.midX
+        let y =  arrowDown ? ( originRect.minY - popSize.height/2 - arrowWidth ) : (originRect.maxY + arrowHeight)
         
         if (isLeft) {
-            x = popSize.width > originRect.width ? originRect.maxX - popSize.width : originRect.midX - popSize.width/2
+            x = popSize.width > originRect.width ? originRect.maxX - popSize.width/2 :  originRect.midX
         }
-        
         return CGPoint(x:  x, y: y)
     }
 }

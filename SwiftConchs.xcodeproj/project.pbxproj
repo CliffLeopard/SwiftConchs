@@ -32,9 +32,8 @@
 		3CCD63BA286AD241007E4188 /* CaseMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD63B9286AD241007E4188 /* CaseMenu.swift */; };
 		3CCD63BC286B0B6E007E4188 /* UIViewTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD63BB286B0B6E007E4188 /* UIViewTool.swift */; };
 		3CCD63BF286B0C11007E4188 /* PopMenuKeyTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD63BE286B0C11007E4188 /* PopMenuKeyTypes.swift */; };
-		3CCD63C1286B0D73007E4188 /* CaseUIKitPopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD63C0286B0D73007E4188 /* CaseUIKitPopMenu.swift */; };
+		3CCD63C1286B0D73007E4188 /* CasePopMenuInList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD63C0286B0D73007E4188 /* CasePopMenuInList.swift */; };
 		3CCD63C5286B0E92007E4188 /* PopoverMenuViewModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD63C4286B0E92007E4188 /* PopoverMenuViewModifer.swift */; };
-		3CCD63C7286C27AE007E4188 /* PopUIMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD63C6286C27AE007E4188 /* PopUIMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,9 +83,8 @@
 		3CCD63B9286AD241007E4188 /* CaseMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseMenu.swift; sourceTree = "<group>"; };
 		3CCD63BB286B0B6E007E4188 /* UIViewTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTool.swift; sourceTree = "<group>"; };
 		3CCD63BE286B0C11007E4188 /* PopMenuKeyTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopMenuKeyTypes.swift; sourceTree = "<group>"; };
-		3CCD63C0286B0D73007E4188 /* CaseUIKitPopMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseUIKitPopMenu.swift; sourceTree = "<group>"; };
+		3CCD63C0286B0D73007E4188 /* CasePopMenuInList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasePopMenuInList.swift; sourceTree = "<group>"; };
 		3CCD63C4286B0E92007E4188 /* PopoverMenuViewModifer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverMenuViewModifer.swift; sourceTree = "<group>"; };
-		3CCD63C6286C27AE007E4188 /* PopUIMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUIMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,7 +228,7 @@
 				3CCD63B9286AD241007E4188 /* CaseMenu.swift */,
 				3C653EEC2865B1750037BC4C /* CaseCoverView.swift */,
 				3C653EEE2865B18C0037BC4C /* CaseMultiGesture.swift */,
-				3CCD63C0286B0D73007E4188 /* CaseUIKitPopMenu.swift */,
+				3CCD63C0286B0D73007E4188 /* CasePopMenuInList.swift */,
 			);
 			path = Cases;
 			sourceTree = "<group>";
@@ -250,7 +248,6 @@
 			children = (
 				3CCD63C4286B0E92007E4188 /* PopoverMenuViewModifer.swift */,
 				3CCD63BE286B0C11007E4188 /* PopMenuKeyTypes.swift */,
-				3CCD63C6286C27AE007E4188 /* PopUIMenu.swift */,
 			);
 			path = UIViewPop;
 			sourceTree = "<group>";
@@ -403,9 +400,8 @@
 				3CCD63BC286B0B6E007E4188 /* UIViewTool.swift in Sources */,
 				3C653EDD2865ACE50037BC4C /* CustomCoverViewModifer.swift in Sources */,
 				3C0C800D2865A11F00C378BE /* PopoverBackgroundModifer.swift in Sources */,
-				3CCD63C1286B0D73007E4188 /* CaseUIKitPopMenu.swift in Sources */,
+				3CCD63C1286B0D73007E4188 /* CasePopMenuInList.swift in Sources */,
 				3C653EE82865AF520037BC4C /* RefreshableScrollView.swift in Sources */,
-				3CCD63C7286C27AE007E4188 /* PopUIMenu.swift in Sources */,
 				3CCD63BF286B0C11007E4188 /* PopMenuKeyTypes.swift in Sources */,
 				3CCD63BA286AD241007E4188 /* CaseMenu.swift in Sources */,
 				3C653EEF2865B18C0037BC4C /* CaseMultiGesture.swift in Sources */,

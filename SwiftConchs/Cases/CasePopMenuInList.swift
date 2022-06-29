@@ -7,25 +7,32 @@
 
 import SwiftUI
 
-struct CaseUIKitPopMenu: View {
-    let cases = ["ASDSADSIIIJNNBBGGTYYUJJK","ASAS","ASDSFFD","MEDFFF","QAWEIROCJM","QWONCNKSM","kk","kkkkk","pkjjjjjn","lllll","llkjjjjjjj","kkkkk"]
+struct CasePopMenuInList: View {
+    let cases = [
+        "ASDSADSIIIJNNBBGGTYYUJJK","ASDSADSIIIJNNBBGGTYYU","ASDSFFD","MEDFFF","QAWEIROCJM",
+        "QWONCNKSM","kk","kkkkk","pkjjjjjn","lllll",
+        "llkjjjjjjj","kkkkk","LLL","LLLL","JKKKKKKKIKNNGFFFGHHNNNNNNNN"]
     @State var popId:String? = nil
     var body: some View {
         List {
-            ForEach(0..<11) { index in
+            ForEach(0..<15) { index in
                 VStack{
                     HStack(alignment: .top){
                         Spacer()
                         Text(cases[index])
-                            .popMenu(self.$popId,id:String(index), width: 180, height: 40, color: .purple) {
+                            .popMenu(self.$popId,id:String(index), width: 200, height: 40, color: .purple) {
                                 HStack{
-                                    Text("删除")
+                                    Text("删除").foregroundColor(Color.white)
+                                        .onTapGesture {
+                                            debugPrint("Delete")
+                                        }
                                     Divider().background(Color.gray)
-                                    Text("撤回")
+                                    Text("撤回").foregroundColor(Color.white)
                                     Divider().background(Color.gray)
-                                    Text("编辑")
+                                    Text("编辑").foregroundColor(Color.white)
                                 }
-                            }.onLongPressGesture {
+                            }
+                            .onLongPressGesture {
                                 self.popId = String(index)
                             }
                     }.environment(\.layoutDirection,  index % 2 == 0 ? .leftToRight : .rightToLeft)
@@ -44,8 +51,8 @@ struct CaseUIKitPopMenu: View {
     }
 }
 
-struct CaseUIKitPopMenu_Previews: PreviewProvider {
+struct CasePopMenuInList_Previews: PreviewProvider {
     static var previews: some View {
-        CaseUIKitPopMenu()
+        CasePopMenuInList()
     }
 }
