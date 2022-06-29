@@ -24,7 +24,7 @@ struct CustomCoverViewModifer<Container>:ViewModifier  where Container:View{
     private let bound = UIScreen.main.bounds
     func body(content: Content) -> some View {
         return content.onChange(of: present) { newValue in
-            if let controller = rootController() {
+            if let controller = UIViewTool.rootController() {
                 if dialogView == nil {
                     let childController = UIHostingController(rootView: container()
                         .simultaneousGesture(
@@ -56,9 +56,5 @@ struct CustomCoverViewModifer<Container>:ViewModifier  where Container:View{
                 }
             }
         }
-    }
-    
-    func rootController() -> UIViewController? {
-        return (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first?.rootViewController
     }
 }
