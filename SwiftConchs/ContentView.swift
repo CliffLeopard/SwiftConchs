@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var showpop = false
     let cases: [CaseLink] = [
-        CaseLink("CasePopMenu", CasePopMenu()),
+        CaseLink("CasePopMenuInScrolView", CasePopMenuInScrolView()),
         CaseLink("CasePopMenuInList", CasePopMenuInList()),
         CaseLink("CaseMenu", CaseMenu()),
         CaseLink("CoverView", CaseCoverView()),

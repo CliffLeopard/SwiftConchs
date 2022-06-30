@@ -22,7 +22,7 @@
 		3C653EE22865AD5C0037BC4C /* Color++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C653EE12865AD5C0037BC4C /* Color++.swift */; };
 		3C653EE52865ADDC0037BC4C /* PermissionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C653EE42865ADDC0037BC4C /* PermissionUtil.swift */; };
 		3C653EE82865AF520037BC4C /* RefreshableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C653EE72865AF520037BC4C /* RefreshableScrollView.swift */; };
-		3C653EEB2865B1640037BC4C /* CasePopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C653EEA2865B1640037BC4C /* CasePopMenu.swift */; };
+		3C653EEB2865B1640037BC4C /* CasePopMenuInScrolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C653EEA2865B1640037BC4C /* CasePopMenuInScrolView.swift */; };
 		3C653EED2865B1750037BC4C /* CaseCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C653EEC2865B1750037BC4C /* CaseCoverView.swift */; };
 		3C653EEF2865B18C0037BC4C /* CaseMultiGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C653EEE2865B18C0037BC4C /* CaseMultiGesture.swift */; };
 		3C653EFF2865B74B0037BC4C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C653F012865B74B0037BC4C /* Localizable.strings */; };
@@ -71,7 +71,7 @@
 		3C653EE12865AD5C0037BC4C /* Color++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color++.swift"; sourceTree = "<group>"; };
 		3C653EE42865ADDC0037BC4C /* PermissionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionUtil.swift; sourceTree = "<group>"; };
 		3C653EE72865AF520037BC4C /* RefreshableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableScrollView.swift; sourceTree = "<group>"; };
-		3C653EEA2865B1640037BC4C /* CasePopMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasePopMenu.swift; sourceTree = "<group>"; };
+		3C653EEA2865B1640037BC4C /* CasePopMenuInScrolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasePopMenuInScrolView.swift; sourceTree = "<group>"; };
 		3C653EEC2865B1750037BC4C /* CaseCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseCoverView.swift; sourceTree = "<group>"; };
 		3C653EEE2865B18C0037BC4C /* CaseMultiGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseMultiGesture.swift; sourceTree = "<group>"; };
 		3C653F002865B74B0037BC4C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -222,7 +222,7 @@
 		3C653EE92865B14F0037BC4C /* Cases */ = {
 			isa = PBXGroup;
 			children = (
-				3C653EEA2865B1640037BC4C /* CasePopMenu.swift */,
+				3C653EEA2865B1640037BC4C /* CasePopMenuInScrolView.swift */,
 				3CCD63B9286AD241007E4188 /* CaseMenu.swift */,
 				3C653EEC2865B1750037BC4C /* CaseCoverView.swift */,
 				3C653EEE2865B18C0037BC4C /* CaseMultiGesture.swift */,
@@ -391,7 +391,7 @@
 				3C0C7FD52865603000C378BE /* SwiftConchsApp.swift in Sources */,
 				3C653F052865BCF20037BC4C /* EditMenuView.swift in Sources */,
 				3C653EE52865ADDC0037BC4C /* PermissionUtil.swift in Sources */,
-				3C653EEB2865B1640037BC4C /* CasePopMenu.swift in Sources */,
+				3C653EEB2865B1640037BC4C /* CasePopMenuInScrolView.swift in Sources */,
 				3C0C800B2865A0D400C378BE /* PopoverViewModifer.swift in Sources */,
 				3C653EE22865AD5C0037BC4C /* Color++.swift in Sources */,
 				3CCD63BC286B0B6E007E4188 /* UIViewTool.swift in Sources */,

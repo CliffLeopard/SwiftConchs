@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CasePopMenu: View {
+struct CasePopMenuInScrolView: View {
     let cases = [
         "ASDSADSIIIJNNBBGGTYYUJJK","ASDSADSIIIJNNBBGGTYYU","ASDSFFD","MEDFFF","QAWEIROCJM",
         "QWONCNKSM","kk","kkkkk","pkjjjjjn","lllll",
@@ -52,6 +52,6 @@ struct CasePopMenu: View {
 
 struct CasePopMenu_Previews: PreviewProvider {
     static var previews: some View {
-        CasePopMenu()
+        CasePopMenuInScrolView()
     }
 }
