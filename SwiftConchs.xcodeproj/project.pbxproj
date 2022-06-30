@@ -33,6 +33,8 @@
 		3CCD63BC286B0B6E007E4188 /* UIViewTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD63BB286B0B6E007E4188 /* UIViewTool.swift */; };
 		3CCD63C1286B0D73007E4188 /* CasePopMenuInList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD63C0286B0D73007E4188 /* CasePopMenuInList.swift */; };
 		3CCD63C5286B0E92007E4188 /* PopoverMenuViewModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD63C4286B0E92007E4188 /* PopoverMenuViewModifer.swift */; };
+		3CCD63D1286D964D007E4188 /* CaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD63D0286D964D007E4188 /* CaseTextField.swift */; };
+		3CCD63D3286D9FBA007E4188 /* MultiLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD63D2286D9FBA007E4188 /* MultiLineTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		3CCD63BB286B0B6E007E4188 /* UIViewTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTool.swift; sourceTree = "<group>"; };
 		3CCD63C0286B0D73007E4188 /* CasePopMenuInList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasePopMenuInList.swift; sourceTree = "<group>"; };
 		3CCD63C4286B0E92007E4188 /* PopoverMenuViewModifer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverMenuViewModifer.swift; sourceTree = "<group>"; };
+		3CCD63D0286D964D007E4188 /* CaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseTextField.swift; sourceTree = "<group>"; };
+		3CCD63D2286D9FBA007E4188 /* MultiLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				3C653EE72865AF520037BC4C /* RefreshableScrollView.swift */,
+				3CCD63D2286D9FBA007E4188 /* MultiLineTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 				3C653EEC2865B1750037BC4C /* CaseCoverView.swift */,
 				3C653EEE2865B18C0037BC4C /* CaseMultiGesture.swift */,
 				3CCD63C0286B0D73007E4188 /* CasePopMenuInList.swift */,
+				3CCD63D0286D964D007E4188 /* CaseTextField.swift */,
 			);
 			path = Cases;
 			sourceTree = "<group>";
@@ -384,6 +390,7 @@
 				3C653EED2865B1750037BC4C /* CaseCoverView.swift in Sources */,
 				3C0C80092865A07B00C378BE /* MultiPressViewModifier.swift in Sources */,
 				3C653F072865BD250037BC4C /* IndexedCallable.swift in Sources */,
+				3CCD63D3286D9FBA007E4188 /* MultiLineTextField.swift in Sources */,
 				3C653F092865BD3D0037BC4C /* ArrayBuilder.swift in Sources */,
 				3C0C80102865A18300C378BE /* PopShape.swift in Sources */,
 				3C0C7FD72865603000C378BE /* ContentView.swift in Sources */,
@@ -399,6 +406,7 @@
 				3C0C800D2865A11F00C378BE /* PopoverBackgroundModifer.swift in Sources */,
 				3CCD63C1286B0D73007E4188 /* CasePopMenuInList.swift in Sources */,
 				3C653EE82865AF520037BC4C /* RefreshableScrollView.swift in Sources */,
+				3CCD63D1286D964D007E4188 /* CaseTextField.swift in Sources */,
 				3CCD63BA286AD241007E4188 /* CaseMenu.swift in Sources */,
 				3C653EEF2865B18C0037BC4C /* CaseMultiGesture.swift in Sources */,
 			);
