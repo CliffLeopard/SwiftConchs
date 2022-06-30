@@ -13,8 +13,8 @@ struct ContentView: View {
         CaseLink("CasePopMenuInScrolView", CasePopMenuInScrolView()),
         CaseLink("CasePopMenuInList", CasePopMenuInList()),
         CaseLink("CaseMenu", CaseMenu()),
-        CaseLink("CoverView", CaseCoverView()),
-        CaseLink("MultiGesture", CaseMultiGesture()),
+        CaseLink("CaseCoverView", CaseCoverView()),
+        CaseLink("CaseMultiGesture", CaseMultiGesture()),
     ]
     var body: some View {
         NavigationView {
