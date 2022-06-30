@@ -22,7 +22,7 @@ extension View {
                                      br:CGFloat = 4.0,
                                      @ViewBuilder container: @escaping () -> Container) -> some View
     where Container : View,S:ShapeStyle {
-        modifier(PopMenuCoverViewModifer<Container,S>(
+        modifier(PopoverMenuViewModifer<Container,S>(
             popId:popId,
             id:id,
             width:width,
@@ -34,7 +34,7 @@ extension View {
     }
 }
 
-struct PopMenuCoverViewModifer<Container,S>: ViewModifier  where Container:View , S:ShapeStyle {
+struct PopoverMenuViewModifer<Container,S>: ViewModifier  where Container:View , S:ShapeStyle {
     @Binding var popId:String?
     var id:String
     var width:CGFloat

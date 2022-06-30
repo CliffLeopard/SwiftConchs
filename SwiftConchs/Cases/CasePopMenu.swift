@@ -8,16 +8,21 @@
 import SwiftUI
 
 struct CasePopMenu: View {
-    @State var showPop = false
-    let cases = ["ASAS","ASDSFFD","MEDFFF","QAWEIROCJM","QWONCNKSM"]
+    let cases = [
+        "ASDSADSIIIJNNBBGGTYYUJJK","ASDSADSIIIJNNBBGGTYYU","ASDSFFD","MEDFFF","QAWEIROCJM",
+        "QWONCNKSM","kk","kkkkk","pkjjjjjn","lllll",
+        "llkjjjjjjj","kkkkk","LLL","LLLL","JKKKKKKKIKNNGFFFGHHNNNNNNNN"]
+    @State var popId:String? = nil
+    
     var body: some View {
         ScrollView {
-            ForEach(cases,id:\.hashValue) { item in
+            ForEach(0..<40) { key in
+                let index = key % 15
                 VStack{
                     HStack(alignment: .top){
                         Spacer()
-                        Text("QAW")
-                            .popover(self.$showPop, width: 180, height: 40, color: .purple) {
+                        Text(cases[index])
+                            .popover(self.$popId,id: String(key), width: 180, height: 40, color: .purple) {
                                 HStack{
                                     Text("删除")
                                     Divider()
@@ -25,74 +30,22 @@ struct CasePopMenu: View {
                                     Divider()
                                     Text("复制")
                                 }.onTapGesture {
-                                    self.showPop = false
+                                    self.popId = nil
                                 }
                             }.onLongPressGesture {
-                                self.showPop = true
+                                self.popId = String(key)
                             }
-                    }.padding()
-                        .environment(\.layoutDirection,  .leftToRight)
-                    
-                    HStack(alignment: .top){
-                        Spacer()
-                        Text("QAW")
-                            .popover(self.$showPop, width: 180, height: 40, color: .purple) {
-                                HStack{
-                                    Text("删除")
-                                    Divider()
-                                    Text("撤回")
-                                    Divider()
-                                    Text("复制")
-                                }.onTapGesture {
-                                    self.showPop = false
-                                }
-                            }.onLongPressGesture {
-                                self.showPop = true
-                            }
-                    }.padding()
-                        .environment(\.layoutDirection,  .rightToLeft)
-                    
-                    
-                    
-                    HStack(alignment: .top){
-                        Spacer()
-                        Text("QAWADDKSKDKDKLLKSDDD")
-                            .popover(self.$showPop, width: 180, height: 40, color: .purple) {
-                                HStack{
-                                    Text("删除")
-                                    Divider()
-                                    Text("撤回")
-                                    Divider()
-                                    Text("复制")
-                                }.onTapGesture {
-                                    self.showPop = false
-                                }
-                            }.onLongPressGesture {
-                                self.showPop = true
-                            }
-                    }.padding()
-                        .environment(\.layoutDirection,  .leftToRight)
-                    
-                    
-                    HStack(alignment: .top){
-                        Spacer()
-                        Text("QAWADDKSKDKDKLLKSDDDD")
-                            .popover(self.$showPop, width: 180, height: 40, color: .purple) {
-                                HStack{
-                                    Text("删除")
-                                    Divider()
-                                    Text("撤回")
-                                    Divider()
-                                    Text("复制")
-                                }.onTapGesture {
-                                    self.showPop = false
-                                }
-                            }.onLongPressGesture {
-                                self.showPop = true
-                            }
-                    }.padding()
-                        .environment(\.layoutDirection,  .rightToLeft)
-                }}
+                    }.environment(\.layoutDirection,  index % 2 == 0 ? .leftToRight : .rightToLeft)
+                }
+            }.padding()
+        }
+        .simultaneousGesture(
+            TapGesture().onEnded {
+                self.popId = nil
+            }
+        )
+        .onDisappear{
+            self.popId = nil
         }
     }
 }

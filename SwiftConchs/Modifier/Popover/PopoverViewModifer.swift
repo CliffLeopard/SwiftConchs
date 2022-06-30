@@ -11,13 +11,14 @@ import SwiftUI
 
 extension View {
     // 设定锚点，绘制Popover视图
-    public func popover<Container,S>(_ present:Binding<Bool>,
+    public func popover<Container,S>(_ popId:Binding<String?>,
+                                     id:String,
                                      width:CGFloat,height:CGFloat,color:S,
                                      arrowWidth:CGFloat = 12,arrowHeight:CGFloat = 6,
                                      tl:CGFloat = 4.0, tr:CGFloat = 4.0, bl:CGFloat = 4.0, br:CGFloat = 4.0,
                                      @ViewBuilder container: @escaping () -> Container) -> some View where Container : View,S:ShapeStyle {
         
-        modifier(PopoverViewModifer<Container,S>(present:present,width:width, height: height, color:color,
+        modifier(PopoverViewModifer<Container,S>(popId:popId, id: id,width:width, height: height, color:color,
                                                  arrowWidth: arrowWidth, arrowHeight: arrowHeight,
                                                  tl:tl,tr:tr, bl: bl, br: br,
                                                  container: container))
@@ -26,7 +27,8 @@ extension View {
 }
 
 public struct PopoverViewModifer<Container,S>: ViewModifier  where Container : View,S:ShapeStyle {
-    @Binding var present:Bool
+    @Binding var popId:String?
+    var id:String
     var width:CGFloat
     var height:CGFloat
     var color:S
@@ -46,7 +48,7 @@ public struct PopoverViewModifer<Container,S>: ViewModifier  where Container : V
                 let rect = proxy.frame(in: .local)
                 let globalRect = proxy.frame(in: .global)
                 let arrowDown = globalRect.minY > height + 40
-                if self.present && globalRect.minY > 40 {
+                if self.id == popId && globalRect.minY > 40 {
                     container()
                         .environment(\.layoutDirection, .leftToRight)
                         .frame(width: width, height: height)
