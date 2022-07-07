@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C05A5F8287525CF0017A28C /* CaseSafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C05A5F7287525CF0017A28C /* CaseSafeArea.swift */; };
+		3C05A5FA287578FF0017A28C /* CaseListBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C05A5F9287578FF0017A28C /* CaseListBgView.swift */; };
+		3C05A5FC28757F430017A28C /* CaseListBgView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C05A5FB28757F430017A28C /* CaseListBgView2.swift */; };
 		3C0C7FD52865603000C378BE /* SwiftConchsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7FD42865603000C378BE /* SwiftConchsApp.swift */; };
 		3C0C7FD72865603000C378BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7FD62865603000C378BE /* ContentView.swift */; };
 		3C0C7FD92865603000C378BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C7FD82865603000C378BE /* Assets.xcassets */; };
@@ -55,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C05A5F7287525CF0017A28C /* CaseSafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseSafeArea.swift; sourceTree = "<group>"; };
+		3C05A5F9287578FF0017A28C /* CaseListBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseListBgView.swift; sourceTree = "<group>"; };
+		3C05A5FB28757F430017A28C /* CaseListBgView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseListBgView2.swift; sourceTree = "<group>"; };
 		3C0C7FD12865603000C378BE /* SwiftConchs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftConchs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0C7FD42865603000C378BE /* SwiftConchsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConchsApp.swift; sourceTree = "<group>"; };
 		3C0C7FD62865603000C378BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -138,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				3C653EE92865B14F0037BC4C /* Cases */,
-				3C653EE62865AF460037BC4C /* View */,
+				3C653EE62865AF460037BC4C /* Views */,
 				3C653EE32865ADCC0037BC4C /* Tools */,
 				3C653EE02865AD420037BC4C /* Extensions */,
 				3C0C80072865A06300C378BE /* Modifier */,
@@ -215,13 +221,13 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		3C653EE62865AF460037BC4C /* View */ = {
+		3C653EE62865AF460037BC4C /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				3C653EE72865AF520037BC4C /* RefreshableScrollView.swift */,
 				3CCD63D2286D9FBA007E4188 /* MultiLineTextField.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		3C653EE92865B14F0037BC4C /* Cases */ = {
@@ -233,6 +239,9 @@
 				3C653EEE2865B18C0037BC4C /* CaseMultiGesture.swift */,
 				3CCD63C0286B0D73007E4188 /* CasePopMenuInList.swift */,
 				3CCD63D0286D964D007E4188 /* CaseTextField.swift */,
+				3C05A5F7287525CF0017A28C /* CaseSafeArea.swift */,
+				3C05A5F9287578FF0017A28C /* CaseListBgView.swift */,
+				3C05A5FB28757F430017A28C /* CaseListBgView2.swift */,
 			);
 			path = Cases;
 			sourceTree = "<group>";
@@ -398,15 +407,18 @@
 				3C0C7FD52865603000C378BE /* SwiftConchsApp.swift in Sources */,
 				3C653F052865BCF20037BC4C /* EditMenuView.swift in Sources */,
 				3C653EE52865ADDC0037BC4C /* PermissionUtil.swift in Sources */,
+				3C05A5FA287578FF0017A28C /* CaseListBgView.swift in Sources */,
 				3C653EEB2865B1640037BC4C /* CasePopMenuInScrolView.swift in Sources */,
 				3C0C800B2865A0D400C378BE /* PopoverViewModifer.swift in Sources */,
 				3C653EE22865AD5C0037BC4C /* Color++.swift in Sources */,
 				3CCD63BC286B0B6E007E4188 /* UIViewTool.swift in Sources */,
+				3C05A5FC28757F430017A28C /* CaseListBgView2.swift in Sources */,
 				3C653EDD2865ACE50037BC4C /* CustomCoverViewModifer.swift in Sources */,
 				3C0C800D2865A11F00C378BE /* PopoverBackgroundModifer.swift in Sources */,
 				3CCD63C1286B0D73007E4188 /* CasePopMenuInList.swift in Sources */,
 				3C653EE82865AF520037BC4C /* RefreshableScrollView.swift in Sources */,
 				3CCD63D1286D964D007E4188 /* CaseTextField.swift in Sources */,
+				3C05A5F8287525CF0017A28C /* CaseSafeArea.swift in Sources */,
 				3CCD63BA286AD241007E4188 /* CaseMenu.swift in Sources */,
 				3C653EEF2865B18C0037BC4C /* CaseMultiGesture.swift in Sources */,
 			);
