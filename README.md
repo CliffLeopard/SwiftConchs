@@ -6,3 +6,4 @@
 * Menu
 * MultiPressGesture
 * CustomConvert
+* MagnifyingGlassView

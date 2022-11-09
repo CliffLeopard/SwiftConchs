@@ -11,15 +11,6 @@ struct MagnifierExampleView: View {
     @State var isMagnifying = true
     let bounds = UIScreen.main.bounds
     var body: some View {
-//        MagnifierView(
-//            isMagnifying: self.$isMagnifying,
-//            glassShape: AnyShape(Circle())) {
-//                Image("doc")
-//                    .resizable()
-//                    .scaledToFit()
-//            }
-//            .enableCloseButton(false)
-        
         Image("doc")
             .resizable()
             .scaledToFit()

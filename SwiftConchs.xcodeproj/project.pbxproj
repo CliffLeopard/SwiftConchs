@@ -28,9 +28,6 @@
 		3C0C800B2865A0D400C378BE /* PopoverViewModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C800A2865A0D400C378BE /* PopoverViewModifer.swift */; };
 		3C0C800D2865A11F00C378BE /* PopoverBackgroundModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C800C2865A11F00C378BE /* PopoverBackgroundModifer.swift */; };
 		3C0C80102865A18300C378BE /* PopShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C800F2865A18300C378BE /* PopShape.swift */; };
-		3C58087C291A63CB00A1729F /* MagnifyingGlass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580879291A63CB00A1729F /* MagnifyingGlass.swift */; };
-		3C58087D291A63CB00A1729F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58087A291A63CB00A1729F /* Utilities.swift */; };
-		3C58087E291A63CB00A1729F /* MagnifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58087B291A63CB00A1729F /* MagnifierView.swift */; };
 		3C580880291A69F800A1729F /* MagifierGlassModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58087F291A69F800A1729F /* MagifierGlassModifier.swift */; };
 		3C580885291B484000A1729F /* ShapeExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580884291B484000A1729F /* ShapeExampleView.swift */; };
 		3C580887291B487500A1729F /* MagnifierExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580886291B487500A1729F /* MagnifierExampleView.swift */; };
@@ -104,9 +101,6 @@
 		3C0C800A2865A0D400C378BE /* PopoverViewModifer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewModifer.swift; sourceTree = "<group>"; };
 		3C0C800C2865A11F00C378BE /* PopoverBackgroundModifer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverBackgroundModifer.swift; sourceTree = "<group>"; };
 		3C0C800F2865A18300C378BE /* PopShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopShape.swift; sourceTree = "<group>"; };
-		3C580879291A63CB00A1729F /* MagnifyingGlass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagnifyingGlass.swift; sourceTree = "<group>"; };
-		3C58087A291A63CB00A1729F /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		3C58087B291A63CB00A1729F /* MagnifierView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagnifierView.swift; sourceTree = "<group>"; };
 		3C58087F291A69F800A1729F /* MagifierGlassModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagifierGlassModifier.swift; sourceTree = "<group>"; };
 		3C580884291B484000A1729F /* ShapeExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeExampleView.swift; sourceTree = "<group>"; };
 		3C580886291B487500A1729F /* MagnifierExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifierExampleView.swift; sourceTree = "<group>"; };
@@ -289,9 +283,6 @@
 		3C580874291A5C9F00A1729F /* magnification */ = {
 			isa = PBXGroup;
 			children = (
-				3C58087B291A63CB00A1729F /* MagnifierView.swift */,
-				3C580879291A63CB00A1729F /* MagnifyingGlass.swift */,
-				3C58087A291A63CB00A1729F /* Utilities.swift */,
 				3C58087F291A69F800A1729F /* MagifierGlassModifier.swift */,
 				3C580886291B487500A1729F /* MagnifierExampleView.swift */,
 			);
@@ -529,7 +520,6 @@
 				3C653EED2865B1750037BC4C /* CaseCoverView.swift in Sources */,
 				3C0C80092865A07B00C378BE /* MultiPressViewModifier.swift in Sources */,
 				3C653F072865BD250037BC4C /* IndexedCallable.swift in Sources */,
-				3C58087C291A63CB00A1729F /* MagnifyingGlass.swift in Sources */,
 				3CCD63D3286D9FBA007E4188 /* MultiLineTextField.swift in Sources */,
 				3C05A60C28780C9E0017A28C /* TaskState.swift in Sources */,
 				3C653F092865BD3D0037BC4C /* ArrayBuilder.swift in Sources */,
@@ -559,7 +549,6 @@
 				3CCD63BC286B0B6E007E4188 /* UIViewTool.swift in Sources */,
 				3C05A5FC28757F430017A28C /* CaseListBgView2.swift in Sources */,
 				3C653EDD2865ACE50037BC4C /* CustomCoverViewModifer.swift in Sources */,
-				3C58087D291A63CB00A1729F /* Utilities.swift in Sources */,
 				3C0C800D2865A11F00C378BE /* PopoverBackgroundModifer.swift in Sources */,
 				3CCD63C1286B0D73007E4188 /* CasePopMenuInList.swift in Sources */,
 				3C580880291A69F800A1729F /* MagifierGlassModifier.swift in Sources */,
@@ -567,7 +556,6 @@
 				3C653EE82865AF520037BC4C /* RefreshableScrollView.swift in Sources */,
 				3CCD63D1286D964D007E4188 /* CaseTextField.swift in Sources */,
 				3C05A5F8287525CF0017A28C /* CaseSafeArea.swift in Sources */,
-				3C58087E291A63CB00A1729F /* MagnifierView.swift in Sources */,
 				3CA39BB7287D192400F8503A /* CaseCombineView.swift in Sources */,
 				3CCD63BA286AD241007E4188 /* CaseMenu.swift in Sources */,
 				3C580885291B484000A1729F /* ShapeExampleView.swift in Sources */,
