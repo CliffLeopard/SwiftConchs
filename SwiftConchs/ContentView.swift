@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var showpop = false
-    let cases: [CaseLink] = [
+    let viewCases: [CaseLink] = [
         CaseLink("CasePopMenuInScrolView", CasePopMenuInScrolView()),
         CaseLink("CasePopMenuInList", CasePopMenuInList()),
         CaseLink("CaseMenu", CaseMenu()),
@@ -17,18 +17,64 @@ struct ContentView: View {
         CaseLink("CaseMultiGesture", CaseMultiGesture()),
         CaseLink("CaseTextField", CaseTextField()),
         CaseLink("CaseSafeArea", CaseSafeArea()),
-        CaseLink("CaseListBgView", CaseListBgView())
+        CaseLink("CaseListBgView", CaseListBgView()),
+        CaseLink("MagifierGlassVuew",MagnifierExampleView())
     ]
+    
+    let asyncCases:[CaseLink] = [
+        CaseLink("DispatchQueue",DispatchQueueView()),
+        CaseLink("AsyncFuc", AsyncFucView()),
+        CaseLink("LetWait",LetWaitView()),
+        CaseLink("TaskGroup",TaskGroupView())
+    ]
+    
+    let pCases:[CaseLink] = [
+        CaseLink("StateProperty",CasePropertyWrapperView())
+    ]
+    
+    let cCases:[CaseLink] = [
+        CaseLink("CombineView",CaseCombineView())
+    ]
+    
+    
     var body: some View {
         NavigationView {
-            LazyVStack{
-                ForEach(cases) { caseItem in
-                    NavigationLink(caseItem.label) {
-                        caseItem.view
+            VStack{
+                List{
+                    Section("Views") {
+                        ForEach(viewCases) { caseItem in
+                            NavigationLink(caseItem.label) {
+                                caseItem.view
+                            }
+                        }
                     }
-                    Spacer()
+                    
+                    Section("Async") {
+                        ForEach(asyncCases) { caseItem in
+                            NavigationLink(caseItem.label) {
+                                caseItem.view
+                            }
+                        }
+                    }
+                    
+                    Section("Property") {
+                        ForEach(pCases) { caseItem in
+                            NavigationLink(caseItem.label) {
+                                caseItem.view
+                            }
+                        }
+                    }
+                    
+                    Section("Combine") {
+                        ForEach(cCases) { caseItem in
+                            NavigationLink(caseItem.label) {
+                                caseItem.view
+                            }
+                        }
+                    }
                 }
-            }
+                Spacer()
+            }.navigationTitle("SwiftConchs")
         }
     }
 }
